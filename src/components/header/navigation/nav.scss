@@ -1,0 +1,24 @@
+$color-li: white;
+$line--gradient-one: #800080;
+$line--gradient-two: #20B2AA;
+.navigation {
+    display: flex;
+    max-width: 100%;
+    outline: .1rem solid white;
+    background-image: linear-gradient(-60deg, $line--gradient-one 0%, $line--gradient-two 100%);
+
+}
+
+.navigation, li, a {
+    flex-direction: row;
+    justify-content: space-around;
+    color: $color-li;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem .5rem;
+}
+
+.navigation, li, a:hover{
+    color: red;
+}
